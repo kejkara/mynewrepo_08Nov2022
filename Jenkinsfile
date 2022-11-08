@@ -10,9 +10,9 @@ pipeline {
         
         stage('Checkout'){
            steps {
-                git credentialsId: 'f87a34a8-0e09-45e7-b9cf-6dc68feac670', 
-                url: 'https://github.com/iam-veeramalla/cicd-end-to-end',
-                branch: 'main'
+                git credentialsId: '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', 
+                url: 'https://github.com/kejkara/mynewrepo_08Nov2022.git',
+                branch: 'amitdev'
            }
         }
 
