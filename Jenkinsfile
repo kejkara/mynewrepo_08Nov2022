@@ -12,7 +12,7 @@ pipeline {
         stage('build') {
             steps {
                  sh '''echo "build the image"
-                 sudo docker build . -t todoapp:v1'''
+                 sudo docker build . -t todoapp:v2'''
             }
         }
         stage('Run') {
