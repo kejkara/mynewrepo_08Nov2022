@@ -11,14 +11,14 @@ pipeline {
         }
         stage('build') {
             steps {
-                sh '''echo 'Build docker image'
-                docker build . -t todoapp:v2'''
+                 sh '''echo "build the image"
+                 sudo docker build . -t todoapp:v1'''
             }
         }
         stage('Run') {
             steps {
               sh '''echo "running the application"
-                docker run -d -p 8000:8000 todoapp:v2'''
+                sudo docker run -d -p 8000:8000 todoapp:v2'''
             }
     }
 }
